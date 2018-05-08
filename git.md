@@ -9,12 +9,18 @@
   * 点击settings->SSH and GPG keys->New SSH key 把复制的内容粘贴进去保存
   * 输入：ssh -T git@github.com   判断连接是否成功
 
-##需要上传的目录
+## 需要上传的目录
   * 首先我们对 Git 进行用户名和邮箱进行设置，请参照下面格式，替换为你自己常用的用户名和邮箱来完成设置：
   * git config --global user.name "Your Name"
   * git config --global user.email your@example.com
+  * github创建一个项目 github首页->New repository->输入名称->Create repository->复制：例子 git@github.com:papapa/-.git
   * cd 当前文件目录
   * git init
+  * git add README.md
+  * git commit -m "first commit"
+  * git remote add origin git@github.com:papapa/-.git
+  * git push -u origin master
+
 
 
 
